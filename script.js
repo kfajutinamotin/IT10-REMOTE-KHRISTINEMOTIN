@@ -5,3 +5,11 @@ fontSelector.addEventListener("change", function(event){
     textElement.style.fontFamily= selectedFont;
     console.log(selectedFont);
 });
+
+const sizeSelector = document.getElementById("size-selector");
+fontSelector.addEventListener("change", function(event){
+    const selectedSize= event.target.value;
+    const textElement= document.getElementById("text");
+    textElement.style.fontSize= selectedSize + "px";
+    console.log(selectedSize);
+});
